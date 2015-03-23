@@ -1,0 +1,53 @@
+public class Medico
+{
+    // instance variables - replace the example below with your own
+    private String nombre;
+    private String apellidos;
+    private int edad;
+    private boolean casado;
+    private String numeroDocumentoIdentidad;
+    private String especialidad;
+    
+    /**
+     * Constructor for objects of class Persona
+     */
+    
+    public Medico(){
+        nombre="";
+        apellidos="";
+        edad=0;
+        casado=false;
+        numeroDocumentoIdentidad="";
+        especialidad="";
+    }
+    
+    public void setNombre(String valorNombre){
+        nombre=valorNombre;
+    }
+    
+    public String getNombre(){
+        return nombre;
+    }
+    
+    public void setApellidos(String valorApellidos){
+        apellidos=valorApellidos;
+    }
+    
+    public String getApellidos(){
+        return apellidos;
+    }
+    
+    public void setEdad(int valorEdad){
+        edad=valorEdad;
+    }
+    
+    public int getEdad(){
+        return edad;
+    }
+    
+    public void calculoParaMultiploEdad(){
+        int div=edad%5;
+        int res=5-div;
+        System.out.println("El médico de nombre "+nombre+" con especialidad "+especialidad+" tendrá una edad múltiplo de 5 dentro de "+res+" años");
+        }
+}
